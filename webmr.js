@@ -1010,6 +1010,8 @@ function reportHashrate(hashrate) {
     } else {
         formattedHashrate = `${hashrate.toFixed(2)} H/s`;
     }
+
+    console.log("formattedHashrate:", formattedHashrate);
     
     if (typeof window.updateHashrateUI === 'function') {
         window.updateHashrateUI(formattedHashrate);
